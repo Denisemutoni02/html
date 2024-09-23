@@ -1,0 +1,19 @@
+<style>
+             h1{
+            color:rgb(154, 223, 200);
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            text-align: start;
+        }
+        .moi{
+            color: bisque(81, 90, 80);
+        }
+        body{
+            background-color: rgb(80, 110, 121);
+            text-align: center;
+        }
+        table{
+            text-color: rgb(160, 134, 184);
+            text-align: center;
+        }
+    </style>

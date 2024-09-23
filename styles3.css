@@ -1,0 +1,109 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f4f4f4; /* Light text */
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #0d0d0d 30%, #333); /* Gradient for depth */
+    min-height: 100vh;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #e91e63; /* Bright pink */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #000; /* Shadow for depth */
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e91e63; /* Pink hover effect */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* Education Section */
+section#Education {
+    background-color: #333;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f4f4f4;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #e91e63; /* Pink border for accents */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #444; /* Darker header row */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #555; /* Darker table body */
+    color: #f4f4f4;
+}
+
+tr:hover td {
+    background-color: #e91e63; /* Highlight row on hover */
+}
+
+/* Footer (Optional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+

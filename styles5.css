@@ -1,0 +1,115 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark theme */
+    color: #f4f4f4; /* Light text for readability */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #0d0d0d 30%, #333); /* Subtle background gradient */
+    min-height: 100vh;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #e91e63; /* Bright pink for standout heading */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #000; /* Adds shadow for depth */
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #e91e63; /* Accent color */
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e91e63;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Bright text */
+    background-color: #333; /* Dark background for nav links */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e91e63; /* Bright pink hover effect */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Table Styles */
+table {
+    width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+    margin-bottom: 50px;
+}
+
+table, th, td {
+    border: 3px solid #e91e63; /* Bright borders */
+    padding: 10px;
+    text-align: left;
+    background-color: #333; /* Dark table background */
+}
+
+th {
+    color: #e91e63; /* Bright header text */
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+td {
+    color: #f4f4f4; /* Light text */
+    font-size: 16px;
+}
+
+/* Section */
+section#Work {
+    padding: 20px;
+    background-color: #222; /* Slightly lighter section background */
+    border-radius: 10px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7); /* Adds depth */
+}
+
+/* Footer (Optional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
