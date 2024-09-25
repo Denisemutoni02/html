@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles1.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #ff69b4; /* Pink accent for links */
+        }
+
+        section#Profile {
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .intro, .hobbies {
+            width: 45%;
+            background-color: #ff69b4; /* Pink background for sections */
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.7); /* Pink shadow */
+            border-radius: 8px;
+            color: #000; /* Black text inside the sections */
+        }
+
+        h2, p {
+            margin: 10px 0;
+        }
+
+        video {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Profile page</h1>
+    <h1>Profile Page</h1>
     <nav>
         <ul>
             <li><a href="my-cv.html">Home</a></li>
@@ -13,25 +68,29 @@
             <li><a href="education.html">Education</a><br></li>
             <li><a href="work experience.html">Work experience</a><br></li> 
             <li><a href="gallery.html">Gallery</a><br></li>
-         </ul>
+        </ul>
     </nav>
-    <section id ="Profile"></section>
-    <h2>My Profile</h2>
-    <p><b><u>Bio Information</u></b></p>
-    <video src="WhatsApp Video 2024-09-22 at 22.01.28_c9b07e3d.mp4"control width="250px" height="250px"></video>
-    <p>Name:Denise Mutoni</p>
-    <p>Age:21 years</p>
-    <p>Gender:Female</p>
-    <p><b><u>My Introduction</u></b></p>
-    <p>I am an experienced IT professional with 4 years in the field specializing in and also specialising in web developement. I have a strong background in creating accessible and user-friendly websites. I specialize in front-end development using HTML,CSS and javascript, with experience in frameworks like React, high performance applications that prioritize usability and inclusivity.</p>
-    <p><b>Hobbies</b></p>
-    <p>Reading books, listening to music</p>
-    <p>Building side projects</p>
-    <p>Cycling</p>
 
-    <p><b>You can contact me by;</b></p>
-    <p>Email:<b><u>mutonidenise19@gmail.com</u></b></p>
-    <p><b>Phone Number:0741528092</b></p>
-    
+    <section id="Profile"></section>
+    <h2>My Profile</h2>
+    <video src="WhatsApp Video 2024-09-22 at 22.01.28_c9b07e3d.mp4" controls width="250px" height="250px"></video>
+
+    <div class="container">
+        <div class="intro">
+            <p><b><u>My Introduction</u></b></p>
+            <p>I am an experienced IT professional with 4 years in the field specializing in web development. I have a strong background in creating accessible and user-friendly websites. I specialize in front-end development using HTML, CSS, and JavaScript, with experience in frameworks like React, creating high-performance applications that prioritize usability and inclusivity.</p>
+        </div>
+
+        <div class="hobbies">
+            <p><b><u>Hobbies</u></b></p>
+            <p>Reading books, listening to music</p>
+            <p>Building side projects</p>
+            <p>Cycling</p>
+        </div>
+    </div>
+
+    <p><b>You can contact me by:</b></p>
+    <p>Email: <b><u>mutonidenise19@gmail.com</u></b></p>
+    <p><b>Phone Number: 0741528092</b></p>
 </body>
 </html>
