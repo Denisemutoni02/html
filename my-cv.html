@@ -5,57 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUTONI DENISE - CV</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles4.css"
-</head>
-
-<body>
-
-    <!-- Main Heading -->
-    <h1><u>Welcome to Mutoni's Website</u></h1>
-    <p>Hi! I'm Denise Mutoni, a passionate web developer. Check out my CV below.</p>
-
-    <!-- Brief Introduction -->
-    <p><b>An overview of who I am:</b></p>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="my-cv.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="work-experience.html">Work Experience</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-
-    <!-- Internal CSS (if necessary) -->
+    <link rel="stylesheet" href="styles4.css">
     <style>
+        /* Additional styling for dark theme */
         body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 20px;
+            background-color: #121212;
+            color: #f8f9fa;
+            background-image: url("https://i.pinimg.com/736x/f0/4f/ad/f04fad3f0a76af2ed477b086bdb1bf3a.jpg"); /* Replace 'your-image.jpg' with your actual image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #333;
+        .navbar {
+            background-color: rgba(52, 58, 64, 0.8); /* Semi-transparent background for navbar */
         }
 
-        h1, h2 {
-            color: #990;
+        .navbar-brand, .nav-link {
+            color: #f8f9fa !important;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        .nav-link:hover {
+            color: #ffc107 !important; /* Bright yellow hover effect */
         }
 
-        ul li {
-            margin-bottom: 10px;
+        h1 {
+            color: #ffc107; /* Bright yellow heading */
+        }
+
+        .lead {
+            color: #f8f9fa;
+        }
+
+        /* Add background color to content sections */
+        .content {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 8px;
         }
     </style>
+</head>
 
+<body class="container mt-4">
+
+    <!-- Main Heading -->
+    <div class="content">
+        <h1 class="text-center"><u>Welcome to Mutoni's Website</u></h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mutoni Denise</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="my-cv.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work-experience.html">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+    <div class="content mt-4">
+        <p class="lead">Hi! I'm Denise Mutoni, a passionate web developer. Check out my CV below.</p>
+        <p><b>An overview of who I am:</b></p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

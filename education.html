@@ -1,44 +1,85 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
+
 <head>
-    <title>education</title>
-    <link rel="stylesheet" href="styles3.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles3.css">
+
+    <style>
+         /* Additional styling for dark theme */
+         body {
+            background-color: #121212;
+            color: #f8f9fa;
+            background-image: url("https://i.pinimg.com/564x/d8/b6/aa/d8b6aa65b47f85288edaf5d1d9475a13.jpg"); /* Replace 'your-image.jpg' with your actual image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
-<body>
-    <h1>Education</h1>
-    <nav>
-        <ul>
-            <li><a href="my-cv.html">Home</a></li>
-            <li><a href="profile.html">Profile</a><br></li>
-            <li><a href="education.html">Education</a><br></li>
-            <li><a href="work experience.html">Work experience</a><br></li>
-            <li><a href="gallery.html">Gallery</a><br></li> 
-        </ul>
+
+<body class="container mt-4">
+    <h1 class="text-center mb-4">Education</h1>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="my-cv.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work experience.html">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
+    <!-- Education Section -->
     <section id="Education">
-        <table border="4px" width="800px">
-            <tr>
-                <td><b>School</b></td>
-                <td><b>Certificate</b></td>
-                <td><b>Year</b></td>
-            </tr>
-            <tr>
-                <td>St Kizito Primary School Bugoloobi</td>
-                <td>P.L.E</td>
-                <td>2009-2015</td>
-            </tr>
-            <tr>
-                <td>Seeta High School Green Campus</td>
-                <td>U.C.E</td>
-                <td>2016-2019</td>
-            </tr>
-            <tr>
-                <td>Seeta High School Green Campus</td>
-                <td>U.A.C.E</td>
-                <td>2020-2022</td>
-            </tr>
-        
-        </table>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>School</th>
+                        <th>Certificate</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>St Kizito Primary School Bugoloobi</td>
+                        <td>P.L.E</td>
+                        <td>2009-2015</td>
+                    </tr>
+                    <tr>
+                        <td>Seeta High School Green Campus</td>
+                        <td>U.C.E</td>
+                        <td>2016-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Seeta High School Green Campus</td>
+                        <td>U.A.C.E</td>
+                        <td>2020-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

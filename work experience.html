@@ -1,48 +1,90 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
+
 <head>
-   
-    <title>Document</title>
-    <link rel="stylesheet" href="styles5.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles5.css">
+
+    <style>
+        /* Additional styling for dark theme */
+        body {
+           background-color: #121212;
+           color: #f8f9fa;
+           background-image: url("https://i.pinimg.com/564x/6d/f3/81/6df38107812890bf7b132468effc8dc9.jpg"); /* Replace 'your-image.jpg' with your actual image path */
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+       }
+   </style>
 </head>
-<body>
-    <h1>Work experience</h1>
-    <nav>
-        <ul>
-            <li><a href="my-cv.html">Home</a></li>
-            <li><a href="profile.html">Profile</a><br></li>
-            <li><a href="education.html">Education</a><br></li>
-            <li><a href="work experience.html">Work experience</a><br></li> 
-            <li><a href="gallery.html">Gallery</a><br></li>
-         </ul>
+
+<body class="container mt-4">
+    <h1 class="text-center mb-4">Work Experience</h1>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="my-cv.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work experience.html">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section id ="Work experience"></section>
-    <h2>My Work Experience</h2>
-    <table border="3px" width="800px">
-        <td><b>place of work</b></td>
-        <td><b>Duration</b></td>
-        <td><b>Role</b></td>
-        <td><b>Description</b></td>
-    <tr>
-        <td>Centenary Community College</td>
-        <td>2 days</td>
-        <td>Network technician</td>
-        <td>Set up a LAN(Local Area Network)</td>
-    </tr>
-    <tr>
-        <td>Seroma Christian High School</td>
-        <td>1 month</td>
-        <td>Lab technician</td>
-        <td>Maintence</td>
-    </tr>
-    <tr>
-        <td>Bishop Cipriano Kihangire Senior Secondary Scool</td>
-        <td>1 month</td>
-        <td>Lab technician</td>
-        <td>Maintence</td>
-    </tr>
 
+    <!-- Work Experience Section -->
+    <section id="Work experience">
+        <h2 class="mb-4">My Work Experience</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Place of Work</th>
+                        <th>Duration</th>
+                        <th>Role</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Centenary Community College</td>
+                        <td>2 days</td>
+                        <td>Network Technician</td>
+                        <td>Set up a LAN (Local Area Network)</td>
+                    </tr>
+                    <tr>
+                        <td>Seroma Christian High School</td>
+                        <td>1 month</td>
+                        <td>Lab Technician</td>
+                        <td>Maintenance</td>
+                    </tr>
+                    <tr>
+                        <td>Bishop Cipriano Kihangire Senior Secondary School</td>
+                        <td>1 month</td>
+                        <td>Lab Technician</td>
+                        <td>Maintenance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-    
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
