@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Department</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            background-image: url("pexels-receptcelik-7881836.jpg"); /* Add your image URL here */
+            background-size: cover; /* Makes the background image cover the whole body */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+            padding: 20px 0;
+            height: 100vh; /* Ensures the body takes the full viewport height */
+        }
+        header {
+            background: rgba(0, 51, 102, 0.8); /* Semi-transparent background */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: rgba(0, 85, 153, 0.8); /* Semi-transparent background */
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-image: url("pexels-receptcelik-7881836.jpg"); /* Add your image URL here */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Add Department</h1>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="add_student.html">Add Student</a></li>
+                <li class="nav-item"><a class="nav-link" href="add_course.html">Add Course</a></li>
+                <li class="nav-item"><a class="nav-link" href="add_department.html">Add Department</a></li>
+                <li class="nav-item"><a class="nav-link" href="add_mark.html">Add Marks</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <form action="process_department.php" method="POST" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="name">Department Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="head">Department Head:</label>
+            <input type="text" class="form-control" id="head" name="head" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const head = document.getElementById('head').value;
+
+        // Simple validation
+        if (!name || !head) {
+            alert("Please fill in all fields.");
+            return false;
+        }
+
+        return true; // Allow form submission
+    }
+</script>
+
+</body>
+</html>
