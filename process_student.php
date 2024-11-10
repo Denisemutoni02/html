@@ -1,7 +1,12 @@
 <?php
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 include 'db_connect.php'; // Database connection
 
 $message = ''; // To store messages for success or errors
+$action = ''; // Initialize action variable
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
@@ -9,23 +14,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action'])) {
     $action = $_POST['action'];
     
     // Common variables
-   // Collect form data safely
-$name = $_POST['name'] ?? '';
-$access_no = $_POST['access_no'] ?? '';
-$contact = $_POST['contact'] ?? '';
-$program = $_POST['program'] ?? '';
-$department_name = $_POST['department'] ?? '';
-$address = $_POST['address'] ?? '';
-$email = $_POST['email'] ?? '';
-$sex = $_POST['sex'] ?? '';
-$username = $_POST['username'] ?? '';
-$password = isset($_POST['password']) ? password_hash($_POST['password'], PASSWORD_DEFAULT) : '';
-$age = $_POST['age'] ?? 0; // Default age to 0 if not set
+    $name = $_POST['name'] ?? '';
+    $access_no = $_POST['access_no'] ?? '';
+    $contact = $_POST['contact'] ?? '';
+    $program = $_POST['program'] ?? '';
+    $department_name = $_POST['department'] ?? '';
+    $address = $_POST['address'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $sex = $_POST['sex'] ?? '';
+    $username = $_POST['username'] ?? '';
+    $password = isset($_POST['password']) ? password_hash($_POST['password'], PASSWORD_DEFAULT) : '';
+    $age = $_POST['age'] ?? 0; // Default age to 0 if not set
 
-if ($action === 'add') {
-    // Your existing logic for adding a student
-}
-
+    if ($action === 'add') {
         // Check if the department exists
         $checkDepartment = $conn->prepare("SELECT * FROM department WHERE name = ?");
         $checkDepartment->bind_param("s", $department_name);
@@ -48,11 +49,11 @@ if ($action === 'add') {
         // Prepare SQL insert query for the student
         $sql = "INSERT INTO Student (name, access_no, contact, program, address, email, sex, username, password, age, department_name)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
+        
         // Prepare and bind
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sssssssssis", $name, $access_no, $contact, $program, $address, $email, $sex, $username, $password, $age, $department_name);
-
+        
         // Execute and check for success
         if ($stmt->execute()) {
             $message = "Student added successfully!";
@@ -88,7 +89,7 @@ if ($action === 'add') {
         }
         $deleteStmt->close();
     }
-
+}
 
 // Fetch all students to display
 $studentsResult = $conn->query("SELECT * FROM Student");
@@ -266,7 +267,7 @@ $conn->close();
                                                     <label for="sex">Sex</label>
                                                     <select name="sex" class="form-control" required>
                                                         <option value="Male" <?php echo $row['sex'] == 'Male' ? 'selected' : ''; ?>>Male</option>
-                                                         <option value="Female" <?php echo $row['sex'] == 'Female' ? 'selected' : ''; ?>>Female</option>
+                                                        <option value="Female" <?php echo $row['sex'] == 'Female' ? 'selected' : ''; ?>>Female</option>
                                                         <option value="Other" <?php echo $row['sex'] == 'Other' ? 'selected' : ''; ?>>Other</option>
                                                     </select>
                                                 </div>
